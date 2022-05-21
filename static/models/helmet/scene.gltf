@@ -1,0 +1,425 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 12838,
+      "max": [
+        0.10325200855731964,
+        0.13344299793243408,
+        0.11498399823904037
+      ],
+      "min": [
+        -0.10320400446653366,
+        -0.10286899656057358,
+        -0.11387600004673004
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 154056,
+      "componentType": 5126,
+      "count": 12838,
+      "max": [
+        0.9998681545257568,
+        0.9999998807907104,
+        0.9999929070472717
+      ],
+      "min": [
+        -0.9998684525489807,
+        -0.9999998807907104,
+        -0.9999929070472717
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 12838,
+      "max": [
+        0.9791839718818665,
+        0.9822009801864624
+      ],
+      "min": [
+        0.00018400000408291817,
+        0.00018400000408291817
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 74916,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 308112,
+      "componentType": 5126,
+      "count": 3303,
+      "max": [
+        13.416226387023926,
+        29.84137535095215,
+        42.0499267578125
+      ],
+      "min": [
+        -23.695695877075195,
+        -19.567886352539063,
+        -3.5279862880706787
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 347748,
+      "componentType": 5126,
+      "count": 3303,
+      "max": [
+        0.999987006187439,
+        0.99888676404953,
+        0.9989511370658875
+      ],
+      "min": [
+        -0.9999301433563232,
+        -0.9668287634849548,
+        -0.9998378157615662
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 102704,
+      "componentType": 5126,
+      "count": 3303,
+      "max": [
+        0.9799999594688416,
+        0.9650745391845703
+      ],
+      "min": [
+        0.009472988545894623,
+        0.017849698662757874
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 299664,
+      "componentType": 5125,
+      "count": 14442,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Oksana3D (https://sketchfab.com/oksanapaint)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/helmet-4aaee1ac11ae419a935e4ced4f191428",
+      "title": "Helmet"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 357432,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 129128,
+      "byteOffset": 357432,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 387384,
+      "byteOffset": 486560,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 873944,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Helmet_Material_3_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Helmet_Material_3",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.4773246951219512
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Helmet_Material_2",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.03421842137872357,
+          0.03421842137872357,
+          0.03421842137872357,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "HELMET_watermelon_Helmet_Material #3_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Helmet_Inside_Helmet_Material #2_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Helmet__corona.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        7
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.30572739243507385,
+        -0.08147430419921875,
+        -0.35610124468803406,
+        1.0
+      ],
+      "name": "HELMET"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        204.1861335437112,
+        5.949975657537069,
+        -1.0778919432605893,
+        0.0,
+        -6.033980634093743,
+        202.8610785217855,
+        -23.227464165988145,
+        0.0,
+        0.39387694884897173,
+        23.249123054404212,
+        202.9479196667198,
+        0.0,
+        -7.7455058097839355,
+        -3.7203407287597656,
+        -0.9509384632110596,
+        1.0
+      ],
+      "name": "HELMET_watermelon"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.03767703101038933,
+        -0.012456617318093777,
+        0.12847143411636353,
+        1.0
+      ],
+      "name": "Object_5"
+    },
+    {
+      "mesh": 0,
+      "name": "HELMET_watermelon_Helmet_Material #3_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        0.9999999999999847,
+        -1.7484555314694907e-07,
+        -1.4693679385278597e-39,
+        0.0,
+        1.7484555314694907e-07,
+        0.9999999999999847,
+        -3.8893845486632136e-62,
+        0.0,
+        1.4693679385278372e-39,
+        -2.5691244998829583e-46,
+        1.0,
+        0.0,
+        3.086273670196533,
+        -21.573537826538086,
+        -13.625467300415039,
+        1.0
+      ],
+      "name": "Helmet_Inside"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        0.8934269062136166,
+        0.4460901451540577,
+        -0.05283660881843593,
+        0.0,
+        -0.2592323733710327,
+        0.4159467215019212,
+        -0.8716578332725747,
+        0.0,
+        -0.3668607114227321,
+        0.7924594262939583,
+        0.4872589415210946,
+        0.0,
+        8.435579299926758,
+        0.7380234003067017,
+        28.439382553100586,
+        1.0
+      ],
+      "name": "Object_8"
+    },
+    {
+      "mesh": 1,
+      "name": "Helmet_Inside_Helmet_Material #2_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}
