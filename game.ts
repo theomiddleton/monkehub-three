@@ -494,7 +494,7 @@ function updateWaterMaterial() {
 }
 
 function onKeyDown(event: KeyboardEvent) {
-    console.log('keypress');
+    //console.log('keypress');
     let keyCode = event.which;
     if (keyCode == 37) {
         leftPressed = true

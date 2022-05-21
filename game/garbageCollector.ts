@@ -11,7 +11,6 @@ export const garbageCollector = () => {
         scene.remove(environmentBits[environmentObjectIndex]);
         environmentBits.splice(environmentObjectIndex, 1);
 
-        console.log(`Removing environment object at index ${i} from scene`);
     }
 
     for (let i = 0; i < challengeRowsForCollection.length - 1; i++) {
@@ -22,9 +21,6 @@ export const garbageCollector = () => {
         // challengeRowsForCollection[i].rowObjects.forEach(x => {
         //     scene.remove(x);
         // });
-
-        console.log(`Removing challenge line at index ${i} from scene`);
-
         challengeRows.splice(challengeRowIndex, 1);
 
     }
