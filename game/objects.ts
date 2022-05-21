@@ -18,7 +18,6 @@ const gltfLoader = new GLTFLoader();
 
 const rocketGLTF = 'static/models/monkey/scene.gltf'
 const cliffsGLTF = 'static/models/cliffs/scene.gltf';
-//const cliffsGLTF = 'static/models/cliff+tree/scene.gltf';
 const crystalsGLTF = 'static/models/banana/scene.gltf';
 const rockGLTF = 'static/models/lion/scene.gltf'
 const shieldGLTF = 'static/models/helmet/scene.gltf';
@@ -27,17 +26,17 @@ const mothershipGLTF = 'static/models/big-monke/big-monke.gltf'
 
 export const objectsInit = async () => {
     cliffsModel = (await gltfLoader.loadAsync(cliffsGLTF)).scene.children[0];
-    setProgress('Loading energy crystal model...');
+    setProgress('Loading banana model...');
     crystalModel = (await gltfLoader.loadAsync(crystalsGLTF)).scene.children[0];
-    setProgress('Loading rock model...');
+    setProgress('Loading lion model...');
     rockModel = (await gltfLoader.loadAsync(rockGLTF)).scene.children[0];
-    setProgress('Loading shield model...');
+    setProgress('Loading melon helmet model...');
     shieldModel = (await gltfLoader.loadAsync(shieldGLTF)).scene.children[0];
-    setProgress('Loading rocket model ...');
+    setProgress('Loading monke model ...');
     rocketModel = (await gltfLoader.loadAsync(rocketGLTF)).scene.children[0];
     setProgress('Loading starter bay...');
     starterBay = (await gltfLoader.loadAsync(starterBayGLTF)).scene;
-    setProgress('Loading mothership...');
+    setProgress('Loading BIG MONKE...');
     mothershipModel = (await gltfLoader.loadAsync(mothershipGLTF)).scene;
 }
 
