@@ -70,13 +70,13 @@ export const addChallengeRow = (count: number, horizonSpawn: boolean = false) =>
         const random = Math.random() * 20;
 
         // If it's less than 2, create a crystal
-        if (random < 4) {
+        if (random < 7) {
             let crystal = addCrystal(i);
             rowGroup.add(crystal);
 
         }
         // If it's less than 4, spawn a rock
-        else if (random < 8) {
+        else if (random < 12) {
             let rock = addRock(i);
             rowGroup.add(rock);
         }
