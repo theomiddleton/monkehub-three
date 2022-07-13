@@ -167,7 +167,7 @@ export const sceneConfiguration = {
     /// Whether the level has finished
     levelOver: false,
     /// The current level, initialises to one.
-    level: 1,
+    level: 100,
     /// Gives the completion amount of the course thus far, from 0.0 to 1.0.
     coursePercentComplete: () => (sceneConfiguration.courseProgress / sceneConfiguration.courseLength),
     /// Whether the start animation is playing (the circular camera movement while looking at the ship)
