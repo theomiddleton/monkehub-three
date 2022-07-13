@@ -67,21 +67,21 @@ export const addChallengeRow = (count: number, horizonSpawn: boolean = false) =>
     rowGroup.position.z = zOffset;
     for (let i = 0; i < 5; i++) {
         // Calculate a random number between 1 and 10
-        const random = Math.random() * 10;
+        const random = Math.random() * 20;
 
         // If it's less than 2, create a crystal
-        if (random < 2) {
+        if (random < 4) {
             let crystal = addCrystal(i);
             rowGroup.add(crystal);
 
         }
         // If it's less than 4, spawn a rock
-        else if (random < 4) {
+        else if (random < 8) {
             let rock = addRock(i);
             rowGroup.add(rock);
         }
        // but if it's more than 9, spawn a shield
-        else if (random > 9) {
+        else if (random > 19) {
             let shield = addShield(i);
             rowGroup.add(shield);
         }
