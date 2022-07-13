@@ -161,7 +161,7 @@ export const sceneConfiguration = {
         shieldsCollected: 0,
     },
     /// The length of the current level, increases as levels go up
-    courseLength: 5000000000,
+    courseLength: 500000,
     /// How far the player is through the current level, initialises to zero.
     courseProgress: 0,
     /// Whether the level has finished
