@@ -25,6 +25,9 @@ import {
     WebGLRenderer,
 } from 'three';
 
+// level progeers counter, high score
+
+
 import {Water} from './objects/water'
 import {Sky} from "three/examples/jsm/objects/Sky";
 import * as joystick from 'nipplejs';
