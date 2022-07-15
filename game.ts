@@ -69,7 +69,6 @@ export const camera = new PerspectiveCamera(
 // Our three renderer
 let renderer: WebGLRenderer;
 
-
 export const destructionBits = new Array<Mesh>();
 
 // Stores the current position of the camera, while the opening camera animation is playing
