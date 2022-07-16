@@ -641,7 +641,8 @@ export const sceneSetup = (level: number) => {
     shieldUiElement.innerText = String(sceneConfiguration.data.shieldsCollected);
 
     // Sets the current level ID in the UI
-    document.getElementById('levelIndicator')!.innerText = `LEVEL ${sceneConfiguration.level}`;
+    // we minus 99 as we start at level 100, and dont want the player to know how badly this is coded.
+    document.getElementById('levelIndicator')!.innerText = `LEVEL ${sceneConfiguration.level - 99}`;
     // Indicates that the scene setup has completed, and the scene is now ready
     sceneConfiguration.ready = true;
 }
