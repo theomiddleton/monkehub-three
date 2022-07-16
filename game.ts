@@ -26,7 +26,7 @@ import {
 } from 'three';
 
 // todo
-// level progeers counter, high score
+// level progress counter, high score, leaderboard, shop (irl money + bananas)
 
 import {Water} from './objects/water'
 import {Sky} from "three/examples/jsm/objects/Sky";
