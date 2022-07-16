@@ -2,6 +2,7 @@
   "dependencies": {
     "materialize-css": "^1.0.0",
     "nipplejs": "^0.9.0",
+    "stats-js": "^1.0.1",
     "three": "^0.136.0"
   },
   "devDependencies": {

@@ -25,8 +25,8 @@ import {
     WebGLRenderer,
 } from 'three';
 
+// todo
 // level progeers counter, high score
-
 
 import {Water} from './objects/water'
 import {Sky} from "three/examples/jsm/objects/Sky";
@@ -195,18 +195,22 @@ function onWindowResize() {
 const clamp = (num: number, min: number, max: number) => Math.min(Math.max(num, min), max);
 
 const animate = () => {
-    requestAnimationFrame(animate);
-    // If the left arrow is pressed, move the rocket to the left
+    //this function limits framerate and therefore game speed. chage second value to chagne
+    setTimeout( function() {
+        requestAnimationFrame( animate );
+    }, 1000 / 100 );
+
+
     if (leftPressed) {
         rocketModel.position.x -= 0.5;
     }
-    // If the right arrow is pressed, move the rocket to the right
+
     if (rightPressed) {
         rocketModel.position.x += 0.5;
     }
-    // If the joystick is in use, update the current location of the rocket accordingly
+    // If the joystick is in use, update the current location of the monke accordingly
     rocketModel.position.x += positionOffset;
-    // Clamp the final position of the rocket to an allowable region
+    // Clamp the final position of the monke to an allowable region
     rocketModel.position.x = clamp(rocketModel.position.x, -20, 25);
 
 
@@ -250,7 +254,7 @@ const animate = () => {
         camera.userData?.mixer?.update(camera.userData?.clock?.getDelta());
 
         if (sceneConfiguration.rocketMoving) {
-            // Detect if the rocket ship has collided with any of the objects within the scene
+            // Detect if the monke has collided with any of the objects within the scene
             detectCollisions();
 
             // Move the rocks towards the player
@@ -324,7 +328,7 @@ async function init() {
             joystickManager.on("move", (event, data) => {
                 positionOffset = data.vector.x;
             })
-            // When the joystick isn't being interacted with anymore, stop moving the rocket
+            // When the joystick isn't being interacted with anymore, stop moving the monke
             joystickManager.on('end', (event, data) => {
                 positionOffset = 0.0;
             })
@@ -339,16 +343,16 @@ async function init() {
     }
 
     startGameButton.onclick = (event) => {
-        // Indicate that the animation from the camera starting position to the rocket location is running
+        // Indicate that the animation from the camera starting position to the monke location is running
         sceneConfiguration.cameraStartAnimationPlaying = true;
         // Remove the red text on the shield item, if it existed from the last level
         shieldUiElement.classList.remove('danger');
-        // Show the heads up display (that shows crystals collected, etc)
+        // Show the heads up display (that shows crystals collected, etc) ui
         document.getElementById('headsUpDisplay')!.classList.remove('hidden');
 
-        // Create an animation mixer on the rocket model
+        // Create an animation mixer on the monke model
         camera.userData.mixer = new AnimationMixer(camera);
-        // Create an animation from the cameras' current position to behind the rocket
+        // Create an animation from the cameras' current position to behind the monke
         let track = new VectorKeyframeTrack('.position', [0, 2], [
             camera.position.x, // x 1
             camera.position.y, // y 1
