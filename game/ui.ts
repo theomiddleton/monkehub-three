@@ -73,6 +73,24 @@ export const showLevelEndScreen = () => {
     document.getElementById('endOfLevel')!.classList.add('fadeOut');
     document.getElementById('crystalCountLevelEnd')!.innerText = String(sceneConfiguration.data.crystalsCollected);
 
+    //add score to localstorage
+
+    var crystalsScore = sceneConfiguration.data.crystalsCollected
+    var str = crystalsScore.toString(); 
+    var value = crystalsScore
+
+
+    // localStorage.setItem('crystals', str)
+    // console.log("str")
+
+    // //store highscore
+    // var highscore = localStorage.getItem('crystals') || 0;
+
+    // if (value > highscore) {
+    //     highscore = parseInt(str)
+    //     localStorage.setitem('highScore', highscore)
+    // }
+    // return highscore;
 
 }
 export const setProgress = (progress: string) => {
