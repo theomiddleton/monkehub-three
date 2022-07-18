@@ -213,7 +213,7 @@ const animate = () => {
     // Clamp the final position of the monke to an allowable region
     rocketModel.position.x = clamp(rocketModel.position.x, -20, 25);
 
-
+//////////////////////////////////////////////////note
     if (sceneConfiguration.rocketMoving) {
         progressUiElement.style.width = String(sceneConfiguration.coursePercentComplete() * 200) + 'px';
         sceneConfiguration.speed += 0.001;
