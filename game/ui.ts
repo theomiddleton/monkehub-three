@@ -81,6 +81,7 @@ export const showLevelEndScreen = () => {
     var value = crystalsScore
 
     // creates really weird bug. no idea why 
+    // it may not infact be this that causes the bug. instances created without it.
     
     // localStorage.setItem('crystals', str)
     // console.log("str")
