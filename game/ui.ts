@@ -43,7 +43,8 @@ export const nextLevel = (reset: boolean = false) => {
 }
 
 export const updateLevelEndUI = (damaged: boolean) => {
-    endLevelDescriptor.innerText = `LEVEL ${sceneConfiguration.level}`;
+    //we minus 99 as we start at level 100, and dont want the player to know how badly this is coded.
+    endLevelDescriptor.innerText = `LEVEL ${sceneConfiguration.level - 99}`;
     if (damaged) {
         endLevelShipStatus.innerText = 'Your monke has hit too many rocks and is too damaged to continue!\r\n\r\n' +
             'We have another monke you can use but you\'ll have to start over...';
