@@ -525,6 +525,8 @@ export const endLevel = (damaged: boolean) => {
 
     rocketModel.userData.mixer.addEventListener('finished', function () {
         showLevelEndScreen();
+        console.log(sceneConfiguration.data)
+        console.log("1 " + sceneConfiguration.data.crystalsCollected)
     });
     animationAction.play();
 }

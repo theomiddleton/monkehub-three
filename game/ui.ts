@@ -79,7 +79,8 @@ export const showLevelEndScreen = () => {
     var str = crystalsScore.toString(); 
     var value = crystalsScore
 
-
+    // creates really weird bug. no idea why 
+    
     // localStorage.setItem('crystals', str)
     // console.log("str")
 
