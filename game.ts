@@ -59,6 +59,8 @@ import {isTouchDevice} from "./isTouchDevice";
 import {detectCollisions} from "./game/collisionDetection";
 import {Material} from "three/src/materials/Material";
 
+import axios from 'axios'
+
 export const scene = new Scene();
 export const camera = new PerspectiveCamera(
     75,
@@ -337,9 +339,26 @@ async function init() {
 
     startPanel.classList.remove('hidden');
 
+    function ip() {
+        const [ip, setIP] = useState('');
+
+        const getData = async () => {
+            console.log(res.data);
+            setIP(res.data.IPv4)
+        }
+
+        useEffect( () => {
+            //passing getData method to the lifecycle method
+            getData()
+        }, [])
+        console.log("client ip is " + ip)
+    }
+
+
     nextLevelButton.onclick = (event) => {
         nextLevel();
         // sceneConfiguration.speed = 0.1;
+        ip()
     }
 
     startGameButton.onclick = (event) => {
