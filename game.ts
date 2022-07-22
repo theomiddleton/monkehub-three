@@ -341,7 +341,7 @@ async function init() {
 
     function ip() {
         console.log("|||||||||||||||||||||||||||||||||")
-        const [ip, setIP];
+        const ip, setIP;
 
         const getData = async () => {
             const res = await axios.get('https://checkip.amazonaws.com')
