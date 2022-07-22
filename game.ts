@@ -342,14 +342,12 @@ async function init() {
     function ip() {
         console.log("|||||||||||||||||||||||||||||||||")
 
-        const setIP = ""
-
         const getData = async () => {
             const res = await axios.get('https://checkip.amazonaws.com')
             console.log(res.data);
-            setIP(res.data.IPv4)
+            const setIP = (res.data.IPv4)
         }
-        console.log("client ip is " + ip)
+        console.log("client ip is " + setIP)
     }
 
 
