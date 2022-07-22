@@ -344,8 +344,12 @@ async function init() {
 
         const getData = async () => {
             const res = await axios.get('https://checkip.amazonaws.com')
+            const ipData = await axios.get('https://checkip.amazonaws.com')
             console.log(res.data);
             const setIP = (res.data)
+            const ip = res.data
+            console.log("data = " + ipData)
+            console.log("res = " + res.data)
         }
     }
 
