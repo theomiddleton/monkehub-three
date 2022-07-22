@@ -361,6 +361,7 @@ async function init() {
     }
 
     startGameButton.onclick = (event) => {
+        ip()
         // Indicate that the animation from the camera starting position to the monke location is running
         sceneConfiguration.cameraStartAnimationPlaying = true;
         // Remove the red text on the shield item, if it existed from the last level
@@ -672,6 +673,7 @@ objectsInit().then(x => {
     uiInit();
     init();
     animate();
+    ip()
 })
 
 
