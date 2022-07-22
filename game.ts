@@ -341,9 +341,10 @@ async function init() {
 
     function ip() {
         console.log("|||||||||||||||||||||||||||||||||")
-        const [ip, setIP] = useState('');
+        const [ip, setIP];
 
         const getData = async () => {
+            const res = await axios.get('https://checkip.amazonaws.com')
             console.log(res.data);
             setIP(res.data.IPv4)
         }
