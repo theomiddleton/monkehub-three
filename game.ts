@@ -341,18 +341,12 @@ async function init() {
 
     function ip() {
         console.log("|||||||||||||||||||||||||||||||||")
-        const ip, setIP;
 
         const getData = async () => {
             const res = await axios.get('https://checkip.amazonaws.com')
             console.log(res.data);
             setIP(res.data.IPv4)
         }
-
-        useEffect( () => {
-            //passing getData method to the lifecycle method
-            getData()
-        }, [])
         console.log("client ip is " + ip)
     }
 
