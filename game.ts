@@ -347,7 +347,6 @@ async function init() {
             console.log(res.data);
             const setIP = (res.data)
         }
-        console.log("client ip is " + res.data)
     }
 
 
