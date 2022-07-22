@@ -340,6 +340,7 @@ async function init() {
     startPanel.classList.remove('hidden');
 
     function ip() {
+        console.log("|||||||||||||||||||||||||||||||||")
         const [ip, setIP] = useState('');
 
         const getData = async () => {
