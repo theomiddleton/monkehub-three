@@ -673,7 +673,7 @@ objectsInit().then(x => {
     uiInit();
     init();
     animate();
-    ip()
+    //ip()
 })
 
 
