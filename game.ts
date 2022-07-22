@@ -339,29 +339,20 @@ async function init() {
 
     startPanel.classList.remove('hidden');
 
-    function ip() {
-        console.log("|||||||||||||||||||||||||||||||||")
 
-        const getData = async () => {
-            const res = await axios.get('https://checkip.amazonaws.com')
-            const ipData = await axios.get('https://checkip.amazonaws.com')
-            console.log(res.data);
-            const setIP = (res.data)
-            const ip = res.data
-            console.log("data = " + ipData)
-            console.log("res = " + res.data)
-        }
+
+    function usrIP() {
+        console.log("i am losing my mind")
     }
-
-
+        
     nextLevelButton.onclick = (event) => {
         nextLevel();
         // sceneConfiguration.speed = 0.1;
-        ip()
+        usrIP()
     }
 
     startGameButton.onclick = (event) => {
-        ip()
+        usrIP()
         // Indicate that the animation from the camera starting position to the monke location is running
         sceneConfiguration.cameraStartAnimationPlaying = true;
         // Remove the red text on the shield item, if it existed from the last level
@@ -673,7 +664,7 @@ objectsInit().then(x => {
     uiInit();
     init();
     animate();
-    //ip()
+    //usrIP()
 })
 
 
