@@ -22,7 +22,8 @@ const crystalsGLTF = 'static/models/banana/scene.gltf';
 const rockGLTF = 'static/models/lion/scene.gltf'
 const shieldGLTF = 'static/models/helmet/scene.gltf';
 const starterBayGLTF = 'static/models/start_bay/scene.gltf';
-const mothershipGLTF = 'static/models/big-monke/big-monke.gltf'
+const mothershipGLTF = 'static/models/big-monke/big-monke.gltf';
+const groundGLTF  = 'static/models/ground/1.gltf'
 
 export const objectsInit = async () => {
     cliffsModel = (await gltfLoader.loadAsync(cliffsGLTF)).scene.children[0];
