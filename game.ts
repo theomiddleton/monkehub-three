@@ -28,7 +28,21 @@ import {
 // todo
 // level progress counter, high score, leaderboard, shop (irl money + bananas)
 
-import {Water} from './objects/water'
+import axios from 'axios';
+
+axios({
+    method: 'get',
+    url: 'http://ip-api.com/json/',
+    responseType: 'json'
+  })
+    .then(function (response) {
+      response.data
+      JSON.parse(res.data)
+      console.log(res.data)
+      console.log("^^ip info");
+    });
+
+import {Water} from './objects/water';
 import {Sky} from "three/examples/jsm/objects/Sky";
 import * as joystick from 'nipplejs';
 import {JoystickManager} from 'nipplejs';
